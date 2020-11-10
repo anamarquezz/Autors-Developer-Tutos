@@ -1,0 +1,74 @@
+
+
+/*Markers and Counters*/
+
+.markerscounters ol li::marker{
+    color:red;
+    content:counters(list-item, '-');
+}
+
+h3::marker{
+    color:pink;
+    content: '💀';
+}
+h3{
+    display: list-item;
+    padding-right: 0.25em;
+}
+
+
+
+/*************************************************************/
+
+
+.be{
+    color:hotpink;
+}
+.bef  li {
+    list-style: none;
+}
+
+.bef  li::before{
+    content:'🎃'
+}
+/*----------------------------------------------*/
+
+.mar{
+    color:rgb(167, 47, 208);
+}
+
+.markeer ul li::marker{
+    content: '🎃';
+}
+/*************************************************************/
+
+
+.limit ul li::marker{
+    content:'>>>';
+    color:blueviolet;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 1em;    
+}
+
+.limit ul li:before{
+    content:'[before]';
+
+}
+
+.inside ul li {
+    list-style-position: inside;    /* The marker CAN move INSIDE*/
+    background:silver; /*The bofore, CAN'T move OUTSIDE*/
+}
+
+.limit  ul li {  
+    background:silver; /*The bofore, CAN'T move OUTSIDE*/
+}
+
+
+
+/*************************************************************/
+
+
+
+

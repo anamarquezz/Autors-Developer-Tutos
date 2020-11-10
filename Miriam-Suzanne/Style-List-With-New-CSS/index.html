@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>The <strong>::marker</strong> pseudo-element</h1>
+
+    <h3 class="be"> Markers and Counters</h3>
+    <p>the markers just can GO with list items or anything with Display list </p>
+    <ol class="markerscounters">
+        <li>
+            Markers
+            <ol>
+                <li>Generating a <code>::marker</code></li>
+                <li>Limited typographic styling</li>
+                <li>Custom <code>::marker</code> content</li>
+            </ol>
+        </li>
+        <li>
+            Counters
+            <ol>
+                <li>The <code>list-item</code> counter</li>
+                <li>Setting <code>counter</code> values</li>
+            </ol>
+        </li>
+    </ol>
+
+
+    <h3 class="be"> with the before selector</h3>
+    <div class="bef">
+        <ul>
+            <li>All <code>font</code> properties</li>
+            <li><code>color</code></li>
+            <li><code>content</code></li>
+            <li><code>text-combine-upright</code></li>
+            <li><code>direction</code></li>
+            <li><code>unicode-bidi</code></li>
+        </ul>
+    </div>
+    <h3 class="mar"> with the ::marker</h3>
+    <div class="markeer">
+        <ul>
+            <li>All <code>font</code> properties</li>
+            <li><code>color</code></li>
+            <li><code>content</code></li>
+            <li><code>text-combine-upright</code></li>
+            <li><code>direction</code></li>
+            <li><code>unicode-bidi</code></li>
+        </ul>
+    </div>
+
+    <h2>Limited Styling</h2>
+    <p>The bofore CAN'T move OUTSIDE, but The marker CAN move INSIDE</p>
+    <div class="limit outside">
+        <ul>
+            <li>All <code>font</code> properties</li>
+            <li><code>color</code></li>
+            <li><code>content</code></li>
+            <li><code>text-combine-upright</code></li>
+            <li><code>direction</code></li>
+            <li><code>unicode-bidi</code></li>
+        </ul>
+    </div>
+    <div class="limit inside">
+        <ul>
+            <li>All <code>font</code> properties</li>
+            <li><code>color</code></li>
+            <li><code>content</code></li>
+            <li><code>text-combine-upright</code></li>
+            <li><code>direction</code></li>
+            <li><code>unicode-bidi</code></li>
+        </ul>
+    </div>
+
+
+    <h2>Counters</h2>
+    <ul>
+        <li><code>counter()</code> and <code>counters()</code></li>
+        <li>default <code>list-item</code> counter</li>
+        <li><code>counter-reset</code> (and <code>counter-set</code>)</li>
+        <li><code>counter-increment</code></li>
+    </ul>
+
+</body>
+
+</html>
