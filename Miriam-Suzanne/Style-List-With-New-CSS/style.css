@@ -4,17 +4,40 @@
 
 .markerscounters ol li::marker{
     color:red;
-    content:counters(list-item, '-');
+    /* content:counter(list-item, upper-roman);*/
+    content:counters(list-item,'.*🎃*');
 }
 
-h3::marker{
+/* convert the H*n tags to list-items to add content*/
+
+/*h3::marker{
     color:pink;
     content: '💀';
+    
 }
 h3{
     display: list-item;
-    padding-right: 0.25em;
+    margin-left: 1em;
 }
+*/
+
+/* how to create a counter? */
+body{/* iniciar desde -5 */
+    counter-reset:heading2 -5;    
+}
+
+h3::marker{
+    color:hotpink;
+    content: counter(heading2);
+}
+
+h3{
+    display: list-item;
+    margin-left: 1em;
+    counter-increment: heading2;
+}
+
+
 
 
 
