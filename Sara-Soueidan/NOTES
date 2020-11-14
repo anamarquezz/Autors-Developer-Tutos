@@ -1,0 +1,12 @@
+CSS Notes: Sarasoueidan: https://www.sarasoueidan.com
+
+|CONTROLLING RATE OF SCALE:|
+{ vh, vw, vmin, vmax }
+
+font-size:calc(16px+(24-16)*(100vw-400px)/(800-400));
+
+https://codepen.io/MadeByMike/pen/YPJJYv
+
+LINK UNDERLINE
+https://www.kizu.ru/nested-links/
+
