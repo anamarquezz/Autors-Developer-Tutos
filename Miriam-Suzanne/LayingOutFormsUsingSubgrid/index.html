@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laying out Forms using Subgrid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- form:post>label.field>span.label-test{Full Name}+input:text#name^label.field>span.label-test{Email}+input:email#email^label.field>span.label-test{message}+textarea#message^button{send!}-->
+    <form action="" method="post">
+        <label for="name" class="field">
+            <span class="label-text">Full Name</span>
+            <input type="text" name="" id="name">
+        </label>
+        <label for="email" class="field">
+            <span class="label-text">Email</span>
+            <input type="email" name="" id="email">
+        </label>
+        <label for="message" class="field">
+            <span class="label-text">message</span>
+            <textarea name="" id="message" cols="30" rows="10"></textarea>
+        </label>
+        <button>send</button>
+    </form>
+
+</body>
+
+</html>

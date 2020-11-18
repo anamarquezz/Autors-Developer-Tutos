@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(235, 235, 235);
+}
+
+form { 
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    margin-bottom:2em;
+}
+
+/*FIREFOX
+.field{
+    grid-column: span 2;
+    display:grid;
+    grid:inherit;
+    grid-template-columns: subgrid;
+    grid-gap:inherit;
+}
+*/
+/*other*/
+
+.field{
+    grid-column: span 2;
+    display:grid;
+    grid:inherit;
+    grid-template-columns: 6em 1fr;
+    grid-gap:inherit;
